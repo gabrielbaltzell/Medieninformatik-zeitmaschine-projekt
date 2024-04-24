@@ -1,36 +1,115 @@
+.flex-container-header {
+    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .2)), url(../images/delorean-palm-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-anchor: top;
+    height: 700px;
+}
+
 .flex-container-header-bar {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     flex-direction: row;
+    margin-left: 72px;
+    padding: 10px 10px 10px 0px;
+    color: rgb(247, 247, 247);
+}
+div.menu-title {
+    font-size: 24px;
+    font-weight: bolder;
+    width: 50%;
+}
+
+div.menu-link {
+    font-size: 13px;
+    font-weight: bold;
+    width: 12%;
+}
+
+a:link, a, .flex-container-footer-info-title {
+    text-decoration: none;
+    color: rgb(247, 247, 247);
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 .flex-container-header-title {
     display: flex;
+    align-items: left;
+    justify-content: center;
     flex-direction: column;
+    width: 80%;
+    height: 56%;
+    margin-left: 15%;
+    align-self: center;
 }
 
-.flex-container-header-info {
+div.intro-text {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+div.title-text {
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(247, 247, 247);
+    padding: 18px 0px 24px 0px;
+}
+
+div.untertitel-link {
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: normal;
+}
+
+.flex-container-header-info, .flex-container-header-info-containers {
     display: flex;
-    justify-content: left;
+    justify-content: right end;
     flex-direction: row;
+}
+
+.flex-container-header-info-containers {
+    justify-content: basline;
+    margin-left: 42%;
+    background-color: rgb(53, 53, 53);
+}
+
+.flex-container-header-info-icon-battery {
+    border-left: 1px rgba(255, 255, 255, 0.08) solid;
 }
 
 .flex-container-header-info-box {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    font-size: 16px;
+    font-weight: normal;
+    width: 50%;
+}
+
+.flex-container-header-info-text {
+    color: rgb(187, 187, 187);
+    line-height: 24px;
 }
 
 .flex-container-section-info {
     display: flex;
     justify-content: center;
     flex-direction: row;
+    margin-top: 48px;
 }
 
 .flex-container-section-info-box {
     display: flex;
     justify-content: center;
     flex-direction: column;
+}
+
+.flex-container-section-info-box-content {
+    font-size: 16px;
 }
 
 .flex-container-footer-info {
@@ -44,3 +123,9 @@
     justify-content: center;
     flex-direction: column;
 }
+
+div {
+    border: 1px red solid;
+    font-family: Mulish, sans-serif;
+}
+

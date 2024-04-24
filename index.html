@@ -9,46 +9,56 @@
         <link rel="icon" type="image/x-icon" href="images/favicon/favicon-16x16.ico" sizes="16x16" />
         <link rel="icon" type="image/x-icon" href="images/favicon/favicon-96x96.ico" sizes="96x96" />
 
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish:regular:400">
+
         <link rel="stylesheet" href="css/style.css" />
     </head>
 
     <body>
-        <header>
+        <div class="flex-container-header">
             <div class="flex-container-header-bar">
-                <div>Der Zeitmaschinist</div>
-                <div>Ausstattung</div>
-                <div>Stores</div>
-                <div>Team</div>
-                <div>Kontakt</div>
+                <div class="menu-title">Der Zeitmaschinist</div>
+                <div class="menu-link"><a href=".">Ausstatung</a></div>
+                <div class="menu-link"><a href=".">Stores</a></div>
+                <div class="menu-link"><a href=".">Team</a></div>
+                <div class="menu-link"><a href=".">Kontakt</a></div>
             </div>
             <div class="flex-container-header-title">
-                <div>Das Zeitmaschinenauto</div>
-                <div>Designed zum entdecken</div>
+                <div class="intro-text">Neu</div>
+                <div class="title-text">Das Zeitmaschinenauto</div>
+                <div class="untertitel-link"><a href="#ContentSection">Designed zum entdecken</a></div>
             </div>
             <div class="flex-container-header-info">
-                <div class="flex-container-header-info-box">
-                    <div>4 Flux Triebwerke</div>
-                    <div>Das von uns patentierte Flux Triebwerk ist das Erste seiner Art. Es vereint die Leistung einer Turbine mit der Lärmbilanz eines E&#8209;Motors.</div>
-                </div>
-                <div class="flex-container-header-info-box">
-                    <div>Flux Akku</div>
-                    <div>Unser hochkapazitiver Flux Akku hat die 1000&#8209;fache Energiedichte einer Autobatterie. So erhalten wir Reichweiten von bis zu 3000 Jahren.</div>
+                <div class="flex-container-header-info-containers">
+                    <div class="flex-container-header-info-icon"><img src="images/icons/fan.svg" alt="Fan Icon" width="45" height="45"></div>
+                    <div class="flex-container-header-info-box">
+                        <div class="flex-container-footer-info-title">4 Flux Triebwerke</div>
+                        <div class="flex-container-header-info-text">Das von uns patentierte Flux Triebwerk ist das Erste seiner Art. Es vereint die Leistung einer Turbine mit der Lärmbilanz eines E&#8209;Motors.</div>
+                    </div>
+                    <div class="flex-container-header-info-icon-battery"><img src="images/icons/battery-full.svg" alt="Battery Icon" width="45" height="45"></div>
+                    <div class="flex-container-header-info-box">
+                        <div class="flex-container-footer-info-title">Flux Akku</div>
+                        <div class="flex-container-header-info-text">Unser hochkapazitiver Flux Akku hat die 1000&#8209;fache Energiedichte einer Autobatterie. So erhalten wir Reichweiten von bis zu 3000 Jahren.</div>
+                    </div>
                 </div>
             </div>
-        </header>
+        </div>
         <section>
             <div class="flex-container-section-info">
-                <div class="flex-container-section-info-box">
-                    <div>Sprachsteuerung</div>
-                    <div>Kontrollieren Sie alle Funktionen Ihres Zeitmaschinenautos per Sprachsteuerung. Das Auto erkennt dabei Ihre Stimme und reagiert nur, wenn Sie sprechen. Die 16 Richtmikrofone erlauben es Sie selbst bei Entfernungen von bis zu 800 Metern noch zuverlässig zu verstehen.</div>
+                <div class="flex-container-section-info-box" id="ContentSection">
+                    <div class="flex-container-section-info-box-icon"><img src="images/icons/mic.svg" alt="Mic Icon" width="32" height="32"></div>
+                    <div class="flex-container-section-info-box-title">Sprachsteuerung</div>
+                    <div class="flex-container-section-info-box-content">Kontrollieren Sie alle Funktionen Ihres Zeitmaschinenautos per Sprachsteuerung. Das Auto erkennt dabei Ihre Stimme und reagiert nur, wenn Sie sprechen. Die 16 Richtmikrofone erlauben es Sie selbst bei Entfernungen von bis zu 800 Metern noch zuverlässig zu verstehen.</div>
                 </div>
                 <div class="flex-container-section-info-box">
-                    <div>Navigation</div>
-                    <div>Das brandneue Navigationssystem navigiert Sie nun durch Zeit und Raum. Geben Sie einfach ein, zu welcher Zeit Sie ankommen möchten, um den Rest kümmern wir uns. Dabei können Sie bis zu 3000 Jahre überwinden.</div>
+                    <div class="flex-container-section-info-box-icon"><img src="images/icons/geo-alt-fill.svg" alt="Geo Icon" width="32" height="32"></div>
+                    <div class="flex-container-section-info-box-title">Navigation</div>
+                    <div class="flex-container-section-info-box-content">Das brandneue Navigationssystem navigiert Sie nun durch Zeit und Raum. Geben Sie einfach ein, zu welcher Zeit Sie ankommen möchten, um den Rest kümmern wir uns. Dabei können Sie bis zu 3000 Jahre überwinden.</div>
                 </div>
                 <div class="flex-container-section-info-box">
-                    <div>Fingerabdrucksensor</div>
-                    <div>Wir alle kennen den Moment in dem man sich fragt: "Wo habe ich den Schlüssel hingelegt?". Das wird in Zukunft kein Problem mehr darstellen, denn mit unserem Fingerabdrucksensor, der im Türgriff und Zündschloss integriert ist, steigen Sie ganz bequem ohne Schlüssel ein.</div>
+                    <div class="flex-container-section-info-box-icon"><img src="images/icons/fingerprint.svg" alt="Fingerpring Icon" width="32" height="32"></div>
+                    <div class="flex-container-section-info-box-title">Fingerabdrucksensor</div>
+                    <div class="flex-container-section-info-box-content">Wir alle kennen den Moment in dem man sich fragt: "Wo habe ich den Schlüssel hingelegt?". Das wird in Zukunft kein Problem mehr darstellen, denn mit unserem Fingerabdrucksensor, der im Türgriff und Zündschloss integriert ist, steigen Sie ganz bequem ohne Schlüssel ein.</div>
                 </div>
             </div>
         </section>
