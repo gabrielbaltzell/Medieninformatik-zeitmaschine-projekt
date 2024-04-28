@@ -1,10 +1,10 @@
 .flex-container-header {
+    display: flex;
     background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .2)), url(../images/delorean-palm-unsplash.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    text-anchor: top;
     height: 700px;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
 .flex-container-header-bar {
@@ -27,8 +27,12 @@ div.menu-link {
     width: 12%;
 }
 
-a:link, a, .flex-container-footer-info-title {
+.non-footer-links {
     text-decoration: none;
+    color: rgb(247, 247, 247);
+}
+
+.flex-container-footer-info-title {
     color: rgb(247, 247, 247);
 }
 
@@ -65,29 +69,45 @@ div.untertitel-link {
     font-weight: normal;
 }
 
-.flex-container-header-info, .flex-container-header-info-containers {
+.flex-container-header-info {
     display: flex;
-    justify-content: right end;
+    justify-content: right;
     flex-direction: row;
 }
 
-.flex-container-header-info-containers {
-    justify-content: basline;
+.flex-container-header-info-container {
+    display: flex;
+    justify-content: right;
+    flex-direction: row;
     margin-left: 42%;
+    width: 64%;
     background-color: rgb(53, 53, 53);
 }
 
-.flex-container-header-info-icon-battery {
-    border-left: 1px rgba(255, 255, 255, 0.08) solid;
+.flex-container-header-info-container-group-1,  .flex-container-header-info-container-group-2{
+    display: flex;
+    flex-direction: row;
+    padding: 3%;
+    width: 50%;
+}
+
+.flex-container-header-info-container-group-1 {
+    border-right: 1px rgba(255, 255, 255, 0.08) solid;
+}
+
+.flex-container-header-info-icon {
+    margin-right: 24px;
 }
 
 .flex-container-header-info-box {
     display: flex;
-    justify-content: center;
     flex-direction: column;
     font-size: 16px;
     font-weight: normal;
-    width: 50%;
+}
+
+.flex-container-header-info-title{
+    color: rgb(245, 247, 247);
 }
 
 .flex-container-header-info-text {
@@ -98,34 +118,81 @@ div.untertitel-link {
 .flex-container-section-info {
     display: flex;
     justify-content: center;
-    flex-direction: row;
     margin-top: 48px;
+}
+
+.flex-container-section-info-container {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
 }
 
 .flex-container-section-info-box {
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    margin-left: 50px;
+}
+
+.flex-container-section-info-box-title {
+    color: rgb(51, 51, 51);
+    margin: 16px 0px 8px 0px;
 }
 
 .flex-container-section-info-box-content {
     font-size: 16px;
+    color: rgb(153, 153, 153);
+    line-height: 30px;
+}
+
+footer {
+    background-color: rgb(245, 245, 245);
+    padding: 40px 0px 60px 0px;
+}
+
+.footer-links{
+    font-size:  16px;
+    text-decoration: none;
+    color: rbg(100, 109, 117);
 }
 
 .flex-container-footer-info {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-direction: row;
 }
 
 .flex-container-footer-info-box {
     display: flex;
-    justify-content: center;
     flex-direction: column;
 }
 
+.flex-container-footer-info-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(68, 68, 68);
+    margin-bottom: 30px;
+}
+
 div {
-    border: 1px red solid;
     font-family: Mulish, sans-serif;
+}
+
+/* Responsive Layout */
+@media (max-width: 950px){
+
+    .flex-container-header-info-text {
+        display: none;
+    }
+}
+
+@media (max-width: 750px){
+
+    .flex-container-header-info {
+        visibility: hidden;
+    }
+
+    .flex-container-section-info-container {
+        flex-direction: column;
+    }
 }
 
